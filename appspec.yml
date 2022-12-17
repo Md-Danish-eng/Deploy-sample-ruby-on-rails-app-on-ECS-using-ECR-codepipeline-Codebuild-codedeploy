@@ -3,7 +3,7 @@ Resources:
  - TargetService:
      Type: AWS::ECS::Service
      Properties:
-       TaskDefinition: "arn:aws:ecs:us-east-1:450403516352:task-definition/ecs-ror-task:1"
+       TaskDefinition: "arn:aws:ecs:ap-south-1:955344041027:task-definition/microservice-task:1"
        LoadBalancerInfo:
-         ContainerName: "ecsrorpoc"
+         ContainerName: "microservice"
          ContainerPort: 80
