@@ -8,10 +8,10 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t  ror:1 .
-      - docker tag ror:1 450403516352.dkr.ecr.us-east-1.amazonaws.com/danish-bluegreen-poc
+      - docker build -t  microservice:1 .
+      - docker tag microservice:1 955344041027.dkr.ecr.ap-south-1.amazonaws.com/microservice
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 450403516352.dkr.ecr.us-east-1.amazonaws.com/danish-bluegreen-poc
+      - docker push 955344041027.dkr.ecr.ap-south-1.amazonaws.com/microservice
